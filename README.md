@@ -30,7 +30,7 @@ Install Python 3.7+, optionally create virtual environment.
 
 Install dependencies:
 ```shell
-pip install -r requirements.txt
+poetry build
 ```
 
 Copy `.env.example` as `.env`. Fill the variables.
@@ -40,12 +40,12 @@ Copy `.env.example` as `.env`. Fill the variables.
 
 Run development flask server:
 ```shell
-flask run
+poetry run flask run
 ```
 
 Run development server with debug:
 ```shell
-flask --debug run
+poetry run flask --debug run
 ```
 > **Note**
 > Duplication of data stream instances in debug mode is fine. 
